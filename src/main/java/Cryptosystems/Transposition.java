@@ -1,11 +1,11 @@
-package Encryptors;
+package Cryptosystems;
 
 import java.util.*;
 
-public class TranspositionEncryptor {
+public class Transposition {
     private final String key;
 
-    public TranspositionEncryptor(String key) {
+    public Transposition(String key) {
         this.key = key;
     }
 

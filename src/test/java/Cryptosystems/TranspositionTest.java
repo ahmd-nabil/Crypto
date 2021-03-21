@@ -1,13 +1,13 @@
-package Encryptors;
+package Cryptosystems;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TranspositionEncryptorTest {
+class TranspositionTest {
 
     String key = "securit";
-    TranspositionEncryptor encryptor = new TranspositionEncryptor(key);
+    Transposition encryptor = new Transposition(key);
 
     @Test
     void encrypt() {
