@@ -1,3 +1,4 @@
+import Cryptosystems.PlayFair;
 import Cryptosystems.RSA;
 
 import java.nio.charset.StandardCharsets;
@@ -37,5 +38,15 @@ public class Main {
         // message delivered to receiver, he uses his own private key to decrypt it
         byte[] deliveredMessage = receiverRsa.decrypt(encryptedMessage);
         System.out.println(new String(deliveredMessage));
+
+
+        /************************* Play Fair ***************************/
+        PlayFair playFair = new PlayFair("Since By Man");
+
+        String playFairCipher = playFair.encrypt("We Need Million");
+        System.out.println(playFairCipher);
+
+        String decodedPlayFair = playFair.decrypt(playFairCipher);
+        System.out.println(decodedPlayFair);
     }
 }
